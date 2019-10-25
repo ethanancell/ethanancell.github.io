@@ -1,4 +1,27 @@
-<h1>Ethan Ancell's Github Pages</h1>
-<p>Thank you for visiting. At the moment, the only purpose of this Github Pages site is to provide a place where a table of contents for a software manual required in a computational math course I am taking. If you are Dr. Koebbe, jump to that homework table of contents with the below link. Otherwise, thank you for visiting this super boring site that is costing Github probably 3 cents to host per year.</p>
+<html>
+<head>
+  <title>Ethan Ancell</title>
+  <link id="style" rel="stylesheet" href="night.css" />
+</head>
+<body>
+  <h1 class="title dope-text">Ethan Ancell's Github Pages</h1>
+  <p class="main-body">Thank you for visiting. At the moment, the only purpose of this Github Pages site is to provide a place for a table of contents for a software manual (required in a computational math course I am taking). <br><br>If you are Dr. Koebbe, jump to that homework table of contents with the below link. Otherwise, thank you for visiting this super boring site that is costing GitHub probably 3 cents to host per year.</p>
+  <div class="line"></div>
 
-<p><a href="https://ethanancell.github.io/math4610/hw_toc">LINK TO HOMEWORK TABLE OF CONTENTS</a></p>
+  <h3><a href="https://ethanancell.github.io/math4610/hw_toc">Homework Table of Contents</a></h3>
+
+  <script type="text/javascript">
+    function swapStyleSheet(sheet) {
+      document.getElementById("style").setAttribute("href", sheet);
+    }
+
+    var currentTime = new Date().getHours();
+    if (8 <= currentTime && currentTime < 20) {
+      swapStyleSheet("day.css")
+    } else {
+      swapStyleSheet("night.css")
+    }
+
+  </script>
+</body>
+</html>
